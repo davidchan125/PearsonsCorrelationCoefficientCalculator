@@ -60,9 +60,10 @@ public class LoginUI extends JFrame {
     //                            CCGManager ccgManager = new CCGManager();
                                 ccgManager.setDefaultCloseOperation(ccgManager.EXIT_ON_CLOSE);
                                 ccgManager.setVisible(true);
-                                ccgManager.setSize(700, 730);
-    //                            ccgManager.setMinimumSize(new Dimension(700, 730));
-                                ccgManager.setResizable(false);
+//                                ccgManager.setSize(700, 730);
+                                Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+                                ccgManager.setMinimumSize(new Dimension(screenSize.height, screenSize.width / 2));
+                                ccgManager.setResizable(true);
                                 break;
                         }
                     } catch (IOException e) {
@@ -100,9 +101,10 @@ public class LoginUI extends JFrame {
     //                            CCGManager ccgManager = new CCGManager();
                                 ccgManager.setDefaultCloseOperation(ccgManager.EXIT_ON_CLOSE);
                                 ccgManager.setVisible(true);
-                                ccgManager.setSize(700, 730);
-    //                            ccgManager.setMinimumSize(new Dimension(700, 730));
-                                ccgManager.setResizable(false);
+//                                ccgManager.setSize(700, 730);
+                                Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+                                ccgManager.setMinimumSize(new Dimension(screenSize.height, screenSize.width / 2));
+                                ccgManager.setResizable(true);
                                 break;
                         }
                     } catch (IOException e) {
